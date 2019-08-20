@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<title>Survey Form</title>
+
+<body>
+  <div class="header">
+  </div>
+  <div id="grad1">
+    <h1 id="title">Survey </h1>
+  </div>
+
+  <div class="container">
+    <div id="survey">
+
+      <div class="p">
+
+        <p id="description">Please respond to the below questionare.</p>
+      </div>
+      <div>
+        <a>1. Please provide personal identifying information.</a>
+      </div>
+      <div id="labels">
+
+        <div class="row">
+          <label for="name">Name: </label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="row">
+          <label for="email">Email: </label>
+          <input type="text" id="email" placeholder="Enter your mail">
+        </div>
+
+        <div class="row">
+          <label for="age">Age: </label>
+          <input type="text" id="age" placeholder="Enter your Age">
+        </div>
+
+        <div class="row">
+          <label for="Number">Number: </label>
+          <input type="text" id="Number" placeholder="Enter your Number">
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Residence</button>
+        <div class="dropdown-content">
+          <a>U.S. Resident</a>
+          <a>Non-Resident</a>
+        </div>
+      </div>
+
+      <div id="text-box">
+        <textarea rows="4" cols="50">This is a "&lt;textarea&gt;" for additional comments
+      </textarea>
+      </div>
+      <div id="radio">
+        <div class="gender">
+          <div>
+            <input type="radio" name="sex" value="man" checked>Male<br>
+          </div>
+          <div>
+            <input type="radio" name="sex" value="women">Female<br>
+          </div>
+        </div>
+        <div class="legal">
+          <div>
+            <input type="radio" name="age" value="minor" checked>Minor<br>
+          </div>
+          <div>
+            <input type="radio" name="age" value="adult">Adult<br>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a>2. Please confirm the below to the best of your knowledge.</a>
+      </div>
+      <div id="selector">
+        <div>
+          <input type="checkbox" name="history" value="citizen">I am a legal citizen of the United States of American
+        </div>
+        <div>
+          <input type="checkbox" name="history" value="felon">I do not have a felony record
+        </div>
+        <div>
+        </div>
+      </div>
+      <div id="submits">
+        <input type="submit" value="SUBMIT" id="submit" onClick="$('#default').click()"> 
+      </div>
+      <a class="note">*By pressing submit I confirm all statements are true to the best of my knowledge.</a>
+      </form>
+
+    </div>
+
+</body>
+
+</html>
